@@ -47,63 +47,59 @@ std::string Wordle1::test(std::string guess)
 	
 }
 
-void Wordle1::printColor(char x)
+void Wordle1::printColor(int color,char x)
 {
-	if (x == 'G')
-	{
-		std::cout << "\033[1;32mG\033[0m\n";
+	if(x=='G')
+{
+		std::cout << "\033[1;"<<color<<"m" << x << "\033[0m";
 	}
 	else if (x == 'O')
 	{
-		std::cout << "\033[1;31mO\033[0m\n";
+		std::cout << "\033[1;" << color << "m" << x << "\033[0m";
 	}
 	else if (x == 'B')
 	{
-		std::cout << "\033[1;30mB\033[0m\n";
+		std::cout << "\033[1;" << color << "m" << x << "\033[0m";
 	}
 }
 
 void Wordle1::draw()
 {
 	system("cls");
-	
-	for (int i = 0; i < 6; ++i)
+
+	for (int i = 0; i < attempt; ++i)
 	{
 		for (int k = 0; k < 5; ++k)
 		{
+			
 			if (answers[i][k] == 'G')
 			{
-				printColor('G');
-
+				printColor(32,'G');
 			}
+
 			else if (answers[i][k] == 'O')
 			{
-				printColor('O');
+				printColor(31, 'O');
 			}
+
 			else if (answers[i][k] == 'B')
 			{
-				printColor('B');
+				printColor(34, 'B');
 			}
-
+			
 		}
-		
-
-		std::cout << guesses[i] << '\t' << answers[i] << std::endl;
-
-		
-
-
+				
+		std::cout<<" " << guesses[i];//<< '\t' << answers[i] << std::endl
 	}
-	
-
-	
+	std::cout << std::endl;
 }
 
 bool Wordle1::isFinished()
+
 {
-	if (attempt == 6 || guesses[attempt-1] == secret)
-		return true;
-	else
+	//if (attempt == 6 || guesses[attempt-1] == secret)
+		// true;
+	if (attempt == 0) 
 		return false;
 	
 }

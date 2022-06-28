@@ -13,7 +13,7 @@ class Wordle1
 public:
 	Wordle1(std::string secret);
 	std::string test(std::string guess);
-	void printColor(char x);
+	void printColor(int color,char x);
 	void draw();
 	bool isFinished(); 
 	
