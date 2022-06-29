@@ -150,11 +150,11 @@ void Game::start()
 	} while (!board.isOver());
 	if (board.whoWon())
 	{
-		std::cout << "won player X" << std::endl;
+		std::cout << "won player O" << std::endl;
 	}
 	else
 	{
-		std::cout << "won player O" << std::endl;
+		std::cout << "won player X" << std::endl;
 	}
 		
 }
