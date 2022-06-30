@@ -41,7 +41,7 @@ bool Board::checkerColumns()
 	bool result = false;
 	for (int i = 0; i < 10; ++i)
 	{
-		for (int k = 0; k < 10; ++k)
+		for (int k = 0; k < 8; ++k)
 		{
 
 			if (table[i][k] == table[i][k+1] &&
@@ -60,7 +60,7 @@ bool Board::checkerRows()
 	bool result = false;
 	for (int i = 0; i < 10; ++i)
 	{
-		for (int k = 0; k < 10; ++k)
+		for (int k = 0; k < 8; ++k)
 		{
 
 			if (table[k][i] == table[k+1][i] &&
