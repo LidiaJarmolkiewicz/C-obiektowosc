@@ -23,14 +23,18 @@ int main()
 	u.add(new Keeper(tomasz));
 	u.add(new Guard(alicja));
 	std::cout << "lista wszystkich pracownikow" << std::endl;
+	std::cout << std::endl;
 	u.printAllStaff();
+	std::cout << std::endl;
 	std::cout << "lista  pracownikow naukowych" << std::endl;
+	std::cout << std::endl;
 	u.printTeachingStaff();
+	std::cout << std::endl;
+	std::cout << std::endl;
 	std::cout << "lista  wynagrodzen netto" << std::endl;
-	u.printAllStaffNetIncomes();
-	
-
-	//std::cout << "Suma wynagrodzen: " << u.calculateEmployerCost() << std::endl;
+	u.printAllStaffNetIncomes(); 
+	std::cout << std::endl;
+	std::cout << "Suma kosztow pracodawcy  wszystkich pracownikow : " << u.calculateEmployerCost() <<" zl." << std::endl;
 	
 	
 	return 0;

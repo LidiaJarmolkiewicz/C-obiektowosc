@@ -19,6 +19,7 @@ bool Professor::isTeachingStaf()
 void Professor::printEployee()
 
 {
+	
 	std::cout << firstName << '\t' << secondName << '\t' <<position <<'\t' << isTeachingStaf() << '\t' << static_cast<int>(form) << '\t' << salary << std::endl;
 }
 
@@ -26,6 +27,8 @@ void Professor::printEmployeeNetSalary()
 {
 	std::cout << getEmployeeNetSalary() << " zl." <<std::endl;
 }
+
+
 
 Lecturer::Lecturer(std::string firstName, std::string secondName, FormOfEmployment form, double salary)
 {
@@ -48,6 +51,9 @@ void Lecturer::printEmployeeNetSalary()
 {
 	std::cout << getEmployeeNetSalary() << " zl." << std::endl;
 }
+	
+
+
 Assistant::Assistant(std::string firstName, std::string secondName, FormOfEmployment form, double salary)
 {
 	this->firstName = firstName;
@@ -70,6 +76,8 @@ void Assistant::printEmployeeNetSalary()
 {
 	std::cout << getEmployeeNetSalary() << " zl." << std::endl;
 }
+
+
 Guard::Guard(std::string firstName, std::string secondName, FormOfEmployment form, double salary)
 {
 	this->firstName = firstName;
@@ -91,6 +99,8 @@ void Guard::printEmployeeNetSalary()
 {
 	std::cout << getEmployeeNetSalary() << " zl." << std::endl;
 }
+
+
 Keeper::Keeper(std::string firstName, std::string secondName, FormOfEmployment form, double salary)
 {
 	this->firstName = firstName;
@@ -113,6 +123,8 @@ void Keeper::printEmployeeNetSalary()
 {
 	std::cout << getEmployeeNetSalary() <<" zl." << std::endl;
 }
+
+
 
 void University::printAllStaffNetIncomes()
 {
@@ -152,17 +164,16 @@ void University::printTeachingStaff()
 	}
 }
 
-////double University::calculateEmployerCost()
-//{
-//	 
-//	return 0.0;
-//}
+double University::calculateEmployerCost()
+{
+	double suma = 0;
+	for (int i = 0; i < count; ++i)
+	{
+		suma += employees[i]->costOfContract();
 
-////double University::salaryOfContract()
-//{
-//	
-//	return 0.0;
-//}
+}
+	return suma;
+}
 
 
 
@@ -181,4 +192,47 @@ double Employee::getEmployeeNetSalary()
 	}
 	
 	return s;
+}
+
+bool Employee::isTeachingStaf()
+{
+	return false;
+}
+
+double Employee::getSalaryOfContract()
+{
+	int h = 168;
+	double s = 0.00;
+	this->salary = salary;
+	if (form == FormOfEmployment::Contract)
+	{
+		s = salary * h ;
+	}
+	else
+	{
+		s = salary;
+	}
+
+	return s;
+}
+
+
+
+double Employee::costOfContract()
+{
+	double sal = getSalaryOfContract();
+	double fullsalary = 0;
+	if (form == FormOfEmployment::Contract)
+	{
+		fullsalary = sal * 1.23;//vat
+	}
+	else if (form == FormOfEmployment::ContractOfMandate)
+	{
+		fullsalary = sal;//brutto
+	}
+	else if (form == FormOfEmployment::ContractOfEmployment)
+	{
+		fullsalary = sal * 1.15;//skladki
+	}
+	return fullsalary;
 }

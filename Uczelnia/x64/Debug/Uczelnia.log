@@ -1,5 +1,2 @@
 ﻿  main.cpp
-  Uczelnia.cpp
-D:\SDA\Obiektowosc\Uczelnia\Uczelnia.cpp(44,5): warning C4102: 'std': unreferenced label
-  Generating Code...
   Uczelnia.vcxproj -> D:\SDA\Obiektowosc\Wordle\x64\Debug\Uczelnia.exe

@@ -18,6 +18,8 @@ public:
 	Employee(){};
 	Employee(FormOfEmployment);
 	double getEmployeeNetSalary();
+	double getSalaryOfContract();
+	double costOfContract();
 	virtual bool isTeachingStaf()=0;
 	virtual void printEployee()=0;
 	virtual void printEmployeeNetSalary()=0;
@@ -84,7 +86,7 @@ public:
 	void printEployee();
 	std::string position = "Ochroniarz";
 	void printEmployeeNetSalary();
-	
+		
 	~Guard(){};
 };
 
@@ -98,6 +100,5 @@ public:
 	void add(Employee* e);
 	void printAllStaff();
 	void printTeachingStaff();
-	//double salaryOfContract();
-	//double calculateEmployerCost();
+	double calculateEmployerCost();
 };
