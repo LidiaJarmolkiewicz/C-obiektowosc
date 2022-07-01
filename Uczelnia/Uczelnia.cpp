@@ -152,17 +152,17 @@ void University::printTeachingStaff()
 	}
 }
 
-//double University::calculateEmployerCost()
-{
-	 
-	return 0.0;
-}
+////double University::calculateEmployerCost()
+//{
+//	 
+//	return 0.0;
+//}
 
-//double University::salaryOfContract()
-{
-	
-	return 0.0;
-}
+////double University::salaryOfContract()
+//{
+//	
+//	return 0.0;
+//}
 
 
 

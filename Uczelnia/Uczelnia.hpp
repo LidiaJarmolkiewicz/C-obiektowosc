@@ -91,12 +91,13 @@ public:
 class University
 {
 	Employee* employees[100]; 
+	int count = 0;
 	
 public:
 	void printAllStaffNetIncomes();
 	void add(Employee* e);
 	void printAllStaff();
 	void printTeachingStaff();
-	double salaryOfContract();
-	double calculateEmployerCost();
+	//double salaryOfContract();
+	//double calculateEmployerCost();
 };
