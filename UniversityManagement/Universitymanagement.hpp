@@ -13,6 +13,7 @@ public:
 	void printAllStaffNetIncomes(int hoursInMonth);
 	void add(Employee* object);
 };
+class Student;
 class Course
 {
 	std::string name;

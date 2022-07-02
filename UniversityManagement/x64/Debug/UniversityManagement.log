@@ -1,21 +1,14 @@
 ﻿  main.cpp
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(20,14): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(20,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(24,18): error C2061: syntax error: identifier 'Student'
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(32,13): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(32,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,14): error C3646: 'list': unknown override specifier
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,13): error C3646: 'list': unknown override specifier
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   UniversityManagement.cpp
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(20,14): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(20,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(24,18): error C2061: syntax error: identifier 'Student'
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(32,13): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(32,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,14): error C3646: 'list': unknown override specifier
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,13): error C3646: 'list': unknown override specifier
+D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(42,31): error C3867: 'Employee::isTeachingStaff': non-standard syntax; use '&' to create a pointer to member
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(52,1): error C2511: 'void Course::addStudent(Student *)': overloaded member function not found in 'Course'
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(16): message : see declaration of 'Course'
 D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(53,2): error C2065: 'list': undeclared identifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(54,18): error C2671: 'Course::addStudent': static member functions do not have 'this' pointers
 D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(63,2): error C2065: 'list': undeclared identifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(64,25): error C2660: 'Course::addStudent': function does not take 1 arguments
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(24,7): message : see declaration of 'Course::addStudent'
   Generating Code...
