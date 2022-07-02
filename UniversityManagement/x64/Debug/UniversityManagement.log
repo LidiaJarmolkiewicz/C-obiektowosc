@@ -1,14 +1,3 @@
-﻿  main.cpp
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,14): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,13): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  UniversityManagement.cpp
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,14): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(21,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,13): error C3646: 'list': unknown override specifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.hpp(33,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(42,31): error C3867: 'Employee::isTeachingStaff': non-standard syntax; use '&' to create a pointer to member
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(53,2): error C2065: 'list': undeclared identifier
-D:\SDA\Obiektowosc\UniversityManagement\UniversityManagement.cpp(63,2): error C2065: 'list': undeclared identifier
-  Generating Code...
+﻿  UniversityManagement.cpp
+main.obj : error LNK2019: unresolved external symbol "public: __cdecl Course::Course(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Course@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function main
+D:\SDA\Obiektowosc\Uczelnia\x64\Debug\UniversityManagement.exe : fatal error LNK1120: 1 unresolved externals

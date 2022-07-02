@@ -14,29 +14,7 @@ public:
 	void add(Employee* object);
 };
 class Student;
-class Course
-{
-	std::string name;
-	Employee* tutor;//EducationalEmployee jako klasa/warstwa posrednia
-	StudentList list;
-public:
-	Course(std::string name);
-	void setTutor(Employee* tutor);
-	void addStudent(Student* student);
-	void printAllCourses();
-};
-class Student
-{
-	std::string firstname;
-	std::string secondname;
-	//Course** courses = new Course * [101];
-	CourseList list;
-public:
-	void signIn(Course* course);
-	//void resign(Course* course);
-
-};
-
+class Course;
 class CourseList
 {
 	Course** courses;
@@ -69,4 +47,26 @@ public:
 	void add(Student* object);
 	Student* get(int index);
 	int getCount();
+};
+class Course
+{
+	std::string name;
+	Employee* tutor;//EducationalEmployee jako klasa/warstwa posrednia
+	StudentList list;
+public:
+	Course(std::string name);
+	void setTutor(Employee* tutor);
+	void addStudent(Student* student);
+	void printAllCourses();
+};
+class Student
+{
+	std::string firstname;
+	std::string secondname;
+	//Course** courses = new Course * [101];
+	CourseList list;
+public:
+	void signIn(Course* course);
+	//void resign(Course* course);
+
 };
